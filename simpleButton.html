@@ -1,0 +1,23 @@
+<!-- this is an example of a simple button when clicked triggers a text underneath it -->
+
+<!DOCTYPE html>
+<html>
+<head></head>
+<body>
+<button id = "but" value = "plsclick"> Click me! </button>
+<div id = "here"></div>
+<script>
+  // callback function: what do you want to happen?
+  function callfunc () {
+    document.getElementById("here").innerHTML = "Thanks for clickling" ;
+  }
+  // on which event you want that function to happen?
+  // first, select the button (id)
+  var ics = document.getElementById("but") ;
+  // this is the code that will make the button do the callback function
+  // in paretheses: first is the event trigger, second the name of the callback function
+  ics.addEventListener("click", callfunc) ;
+</script>
+</body>
+
+</html>
